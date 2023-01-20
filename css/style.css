@@ -12,6 +12,29 @@ body{
     background-color: white;
 }
 
+html, body {
+    scroll-behavior: smooth;
+  }
+
+.target:target {
+    animation: fadeIn 0.5s ease-in-out;
+    scroll-margin-top: 15rem;
+
+  }
+
+.targetTo:target{
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*NavBar*/
 
 .navWrepper {
@@ -73,7 +96,7 @@ nav button {
     border: none;
 
     max-width: 21.6rem;
-    height: 4.5rem;
+    
 
     padding: .8rem;
 }
@@ -1026,7 +1049,37 @@ video {
         text-align: center;
     }
 
+    @media (max-width: 321px){
 
+        .presentationTextWrepper h1{
+            line-height: 4rem;
+        }
+    }
 
+    .sectionTitleWrepper p {
+        font-size: 1.6rem;
+    }
+
+    .sectionVideoWrepper video{
+        width: 35rem;
+    }
     
+    .card button{
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .noticeG1,
+    .noticeNd,
+    .noticePolo{
+        width: auto;
+    }
+
+    .containerContactText p{
+        width: auto;
+    }
+
+    #titleCardTwo{
+        font-size: 2.5rem;
+    }
 }
