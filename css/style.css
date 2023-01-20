@@ -390,7 +390,13 @@ video {
     display: flex;
     margin-bottom: 1.7rem;
     max-width: 16.2rem;
-    padding: 1.5rem .7rem;
+    padding: 1rem .7rem;
+
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #FFFCFC;
 
     background: #08297E;
     border-radius: .8rem;
@@ -753,10 +759,6 @@ video {
 
 }
 
-.footerTextInfo {
-    width: 38.8rem;
-
-}
 
 .footerTextInfo p {
     font-family: 'Encode Sans Expanded';
@@ -855,7 +857,7 @@ video {
     }
 
     .sectionVideoWrepper video {
-        width: 60rem;
+        max-width: 50rem;
     }
 
     .navWrepper {
@@ -886,7 +888,6 @@ video {
 
     .card {
         max-width: 150rem;
-        width: 70%;
     }
 
     .card h1 {
@@ -930,8 +931,19 @@ video {
         font-size: 2rem;
     }
 
+    .coment{
+        width: 80%;
+    }
+
+    .comentText{
+        height: auto;
+    }
+
     .containerComents{
         gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .sectionContact{
@@ -940,5 +952,60 @@ video {
 
     .containerFooter{
         gap: 2rem;
+        flex-direction: column;
     }
+
+    .containerApp{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgApp{
+        display: flex;
+        justify-content: center;
+        margin-right: none;
+        
+    }
+
+}
+@media (max-width: 380px){
+    .sectionTitleWrepper p{
+        font-size: 2.2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .presentationInfoWrepper{
+        flex-direction: column;
+    }
+
+    .sectionVideoWrepper video{
+        width: 45rem;
+    }
+    
+    .noticeCards{
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .noticeG1,
+    .noticeNd,
+    .noticePolo{
+        max-width: none;
+        width: 40rem;
+    }
+
+    .imgApp{
+        margin-right: .01rem;
+    }
+
+    .containerApp{
+        text-align: center;
+    }
+
+
+
+    
 }
