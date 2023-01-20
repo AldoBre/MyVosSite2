@@ -1048,38 +1048,41 @@ video {
     .containerApp{
         text-align: center;
     }
+    
+}
 
     @media (max-width: 321px){
 
         .presentationTextWrepper h1{
             line-height: 4rem;
         }
-    }
 
-    .sectionTitleWrepper p {
-        font-size: 1.6rem;
-    }
-
-    .sectionVideoWrepper video{
-        width: 35rem;
-    }
+        .sectionTitleWrepper p {
+            font-size: 1.6rem;
+        }
     
-    .card button{
-        font-size: 2rem;
-        width: 90%;
+        .sectionVideoWrepper video{
+            width: 35rem;
+        }
+        
+        .card button{
+            font-size: 2rem;
+            width: 90%;
+        }
+    
+        .noticeG1,
+        .noticeNd,
+        .noticePolo{
+            width: auto;
+        }
+    
+        .containerContactText p{
+            width: auto;
+        }
+    
+        #titleCardTwo{
+            font-size: 2.5rem;
+        }
     }
 
-    .noticeG1,
-    .noticeNd,
-    .noticePolo{
-        width: auto;
-    }
-
-    .containerContactText p{
-        width: auto;
-    }
-
-    #titleCardTwo{
-        font-size: 2.5rem;
-    }
-}
+    
