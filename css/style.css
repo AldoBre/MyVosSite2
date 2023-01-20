@@ -929,7 +929,24 @@ video {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
+    .noticeCards{
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .noticeCards p{
+        font-size: 2rem;
+    }
+
+    .noticeG1,
+    .noticeNd,
+    .noticePolo{
+        max-width: none;
+        width: 50rem;
     }
 
     .plansLgpd {
@@ -1001,20 +1018,6 @@ video {
         width: 45rem;
     }
     
-    .noticeCards{
-        gap: 2rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .noticeG1,
-    .noticeNd,
-    .noticePolo{
-        max-width: none;
-        width: 40rem;
-    }
-
     .imgApp{
         margin-right: .01rem;
     }
