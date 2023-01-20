@@ -1053,8 +1053,17 @@ video {
 
     @media (max-width: 321px){
 
+        .presentationWrepper{
+            margin: 11rem auto 3rem;
+        }
+
+        .presentationWrepper p{
+            font-size: 2rem;
+        }
+
         .presentationTextWrepper h1{
-            line-height: 4rem;
+            line-height: 5rem;
+            font-size: 4rem;
         }
 
         .sectionTitleWrepper p {
