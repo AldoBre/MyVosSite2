@@ -389,8 +389,10 @@ video {
 .card button {
     display: flex;
     margin-bottom: 1.7rem;
-    max-width: 16.2rem;
-    padding: 1rem .7rem;
+    padding: 1.5rem .7rem;
+    width:90%;
+    align-items: center;
+    justify-content: center;
 
     font-family: 'Encode Sans Expanded';
     font-style: normal;
@@ -831,6 +833,11 @@ video {
         font-size: 45%;
     }
 
+    .card button{
+        font-size: 1.3rem;
+    }
+    
+
 }
 
 @media (max-width: 430px) {
@@ -896,7 +903,7 @@ video {
 
     .card ul {
         max-width: 150rem;
-        margin: 0 5rem 0;
+        margin: 0 3rem 0;
     }
 
     .card ul li {
@@ -906,7 +913,6 @@ video {
     }
 
     .card button {
-        max-width: none;
         width: 80%;
         font-family: 'Encode Sans Expanded';
         font-style: normal;
@@ -965,6 +971,14 @@ video {
         justify-content: center;
         margin-right: none;
         
+    }
+
+    .titlePlans{
+        align-items: center;
+    }
+
+    .titlePlans h2{
+        line-height: 3rem;
     }
 
 }
