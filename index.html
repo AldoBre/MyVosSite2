@@ -21,13 +21,13 @@
 </head>
 
 <body>
-    <div id="fade" class="hide"  ></div>
+    <div id="fade" class="hide"></div>
     <nav>
 
         <div class="navWrepper">
 
             <div class="navImgWrepper">
-              <a href="#"><img src="img/imgNav.png" alt="Logo MyVos"></a>  
+                <a href="#"><img src="img/imgNav.png" alt="Logo MyVos"></a>
             </div>
 
             <div class="navMenuWrepper">
@@ -45,7 +45,7 @@
 
         </div>
     </nav>
-    
+
     <main>
         <section class="sectionWrepper">
             <div class="presentationWrepper">
@@ -76,7 +76,7 @@
                         situações rotineiras com seu próprio médico. Guarde estes atendimentos online para consultas
                         futuras.</p>
                 </div>
-                <div  class="presentationCardWrepper">
+                <div class="presentationCardWrepper">
                     <img src="img/ambulance.png" alt="">
                     <h3>Emergências</h3>
                     <p>Acesso rápido aos seus dados médicos por profissionais de saúde. Agilidade em atendimento
@@ -85,14 +85,14 @@
             </div>
         </section>
 
-        <section id="aboutUs" class="sectionWrepperVideo target">
+        <section id="aboutUs" class="sectionWrepperVideo targetTo">
 
             <div class="videoContainer">
 
                 <div class="sectionTitleWrepper">
                     <p>Confira um pouco mais sobre a <strong>MyVos</strong></p>
                 </div>
-    
+
                 <div class="sectionVideoWrepper">
                     <video poster="img/capavideo.png" src="video.mp4" controls></video>
                 </div>
@@ -108,13 +108,12 @@
                 </div>
             </div>
 
-            <div   class="partnersImgWrepper ">
+            <div class="partnersImgWrepper ">
                 <img src="img/caascLogo.png" alt="Logo da CAASC">
             </div>
         </section>
-
-        <section id="plansTo"  class="plans target">
-            <div  class="titlePlans">
+        <section id="plansTo" class="plans target">
+            <div class="titlePlans">
                 <h2>Assine um dos planos e aproveite todos os benefícios MyVos!</h2>
             </div>
             <div class="plansContainer">
@@ -126,8 +125,7 @@
                             <li>Salve seus exames, e medicamentos em uso, e acesse quando quiser;</li>
                             <li>Converse com um especialista onde e quando quiser.</li>
                         </ul>
-
-                        <button class="openModal">Conheça nossos planos</button>
+                        <button id="openModalOne">Conheça nossos planos</button>
                     </div>
                     <div class="card">
                         <h1 id="titleCardTwo">Para sua empresa</h1>
@@ -136,8 +134,7 @@
                             <li>Salve seus exames, e medicamentos em uso, e acesse quando quiser;</li>
                             <li>Converse com um especialista onde e quando quiser.</li>
                         </ul>
-
-                        <button class="openModal">Conheça nossos planos</button>
+                        <button id="openModalTwo">Conheça nossos planos</button>
                     </div>
                     <div class="card ">
                         <h1 id="titleCardTree">Para sua clínica</h1>
@@ -147,38 +144,56 @@
                             <li>Converse com um especialista onde e quando quiser.</li>
                         </ul>
 
-                        <button class="openModal">Conheça nossos planos</button>
+                        <button id="openModaltree">Conheça nossos planos</button>
                     </div>
                 </div>
                 <div class="plansLgpd">
                     <img src="img/padlock.png" alt="">
                     <p>Seus dados protegidos em nossa plataforma com a LGPD</p>
                 </div>
-
-                <div id="modal" class="hide" >
+                <div id="modal" class="hide">
+                    <div class="close closeModal">
+                        X
+                    </div>
                     <div class="modalText">
-                        <h1>Para Você</h1>
+                        <h1 id="titleModal"></h1>
                         <ul>
-                            <li>Seus dados de saúde em um único lugar;</li>
-                            <li>Salve seus exames, e medicamentos em uso, e acesse quando quiser;</li>
-                            <li>Converse com um especialista onde e quando quiser;</li>
-                            <li>Tenha uma linha do tempo com todo seu histórico médico;</li>
+                            <li id="listIten1"></li>
+                            <li id="listIten2"></li>
+                            <li id="listIten3"></li>
+                            <li id="listIten4"></li>
+                            <li id="listIten5"></li>
                         </ul>
                     </div>
-
                     <div id="plans" class="modalPrice">
-                        <div class="modalPriceMonth">
-                            <p>Plano Mensal</p>
-                            <h1>R$ 7,90</h1><p>/mês</p>
-                        </div>
+                        <div class="priceOne">
+                            <div class="plansName">
+                                <p id="planTitle"></p>
+                            </div>
+                            <div class="modalPriceMonth">
+                                <div class="prices">
 
-                        <div class="modalPriceYear">
-                            <p>Plano Anual</p>
-                            <h1>R$ 7,90</h1><p>/mês</p>
+                                    <h1 id="plansPrice"></h1>
+                                    <p id="plansPeriod"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pricePlanTwo" class="pricetwo">
+                            <div class="plansName">
+                                <p >Plano Anual</p>
+                            </div>
+                            <div class="modalPriceMonth">
+                                <div class="prices">
+                                    <h1 >R$ 89,90</h1>
+                                    <p >/ano</p>
+                                </div>
+                                <p>Desconto de 6%</p>
+                            </div>
                         </div>
                     </div>
-                    <button class="closeModal">Fechar</button>
-                    
+                    <div class="btnModal">
+                        <button id="btnModalText" class="closeModal "></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,8 +210,9 @@
                     <img src="img/logog1.png" alt="Logo portal G1">
                     <p>Plataforma de Joaçaba registra histórico de saúde dos pacientes.. </p>
                     <div class="linkDirection">
-                        <a href="https://g1.globo.com/sc/santa-catarina/techsc/noticia/2021/09/08/plataforma-de-joacaba-registra-historico-de-saude-dos-pacientes.ghtml" target="_blank">Continue Lendo</a>
-                      
+                        <a href="https://g1.globo.com/sc/santa-catarina/techsc/noticia/2021/09/08/plataforma-de-joacaba-registra-historico-de-saude-dos-pacientes.ghtml"
+                            target="_blank">Continue Lendo</a>
+
                     </div>
                 </div>
 
@@ -204,8 +220,9 @@
                     <img src="img/logond.png" alt="Logo portal Nd+ Notícias">
                     <p>Uma startup desenvolveu uma plataforma que está auxiliando médicos e pacientes...</p>
                     <div class="linkDirection">
-                        <a href="https://ndmais.com.br/tecnologia/plataforma-de-tecnologia-auxilia-medicos-e-pacientes-em-joacaba/" target="_blank">Continue Lendo</a>
-                       
+                        <a href="https://ndmais.com.br/tecnologia/plataforma-de-tecnologia-auxilia-medicos-e-pacientes-em-joacaba/"
+                            target="_blank">Continue Lendo</a>
+
                     </div>
                 </div>
 
@@ -213,8 +230,9 @@
                     <img src="img/logoInovale.png" alt="">
                     <p>Startup joaçabense é premiada no Stratup Summit 2022...</p>
                     <div class="linkDirection">
-                        <a href="https://www.poloinovale.com.br/noticia/startup-incubada-na-incubadora-joacaba-disponibiliza-plataforma-integrada-de-saude" target="_blank">Continue Lendo</a>
-                        
+                        <a href="https://www.poloinovale.com.br/noticia/startup-incubada-na-incubadora-joacaba-disponibiliza-plataforma-integrada-de-saude"
+                            target="_blank">Continue Lendo</a>
+
                     </div>
                 </div>
 
@@ -222,24 +240,24 @@
 
         </section>
 
-        <section id="app" class="sectionAppWrepper targetTo">
-            
+        <section  class="sectionAppWrepper ">
+
             <div class="partnersContainer">
                 <div class="sectionTitlePartnersWrepper">
-                    <h1>Nosso App</h1>
+                    <h1 >Nosso App</h1>
                 </div>
             </div>
-            <div class="containerApp">
+            <div   class="containerApp ">
 
-
-                <div class="imgApp ">
+                <div class="imgApp target " id="app">
                     <img src="img/cell.png" alt="Aplicativo MyVos no celular">
                 </div>
                 <div class="textAppDownload">
                     <h1>Faça o download e experimente!</h1>
                     <button>
                         <img src="img/google-play 1.png" alt="logo da google play">
-                        <a href="https://play.google.com/store/apps/details?id=br.med.myvos.twa" target="_blank">Download</a>
+                        <a href="https://play.google.com/store/apps/details?id=br.med.myvos.twa"
+                            target="_blank">Download</a>
                     </button>
                     <p>Em breve disponível na AppleStore!</p>
                 </div>
@@ -247,7 +265,7 @@
         </section>
 
         <section class="sectionComents">
-            
+
             <div class="partnersContainer">
                 <div class="sectionTitleWrepper">
                     <p>Comentários de quem já usa <strong>MyVos</strong> </p>
@@ -264,9 +282,10 @@
                         <img src="img/star.png" alt="">
                     </div>
                     <div class="comentText">
-                        <p>A MyVos é muito útil pois salvo todos os meus exames dentro da plataforma para facilitar as consultas aos dados médicos.</p>
+                        <p>A MyVos é muito útil pois salvo todos os meus exames dentro da plataforma para facilitar as
+                            consultas aos dados médicos.</p>
                     </div>
-                    <div>                
+                    <div>
                         <p class="comentNameStyle">Monica Linhares Vas</p>
                     </div>
                 </div>
@@ -281,13 +300,14 @@
                     </div>
 
                     <div class="comentText">
-                        <p>Uso os adesivos MyVos em minhas aventuras de bicicleta caso seja necessário para alguma emergência.</p>
+                        <p>Uso os adesivos MyVos em minhas aventuras de bicicleta caso seja necessário para alguma
+                            emergência.</p>
                     </div>
 
-                    <div class="comentName">                       
+                    <div class="comentName">
                         <p class=" comentNameStyle">Severino de Dea</p>
                     </div>
-                  
+
                 </div>
 
                 <div class="coment">
@@ -309,13 +329,16 @@
 
                 </div>
             </div>
-            
+
         </section>
 
         <section id="contact" class="sectionContact target">
             <div class="containerContactText">
                 <h1>Precisa de ajuda?</h1>
-                <p>Estamos aqui para ajudar! Mande um e-mail para <a href="mailto:atendimento@myvos.med.br">atendimento@myvos.med.br</a> ou entre em contato conosco <a href="https://contate.me/myvos" target="_blank">(49) 9 8820-0202</a> <img class="ImgWhats" src="img/whatsapp.png" alt=""></p>
+                <p>Estamos aqui para ajudar! Mande um e-mail para <a
+                        href="mailto:atendimento@myvos.med.br">atendimento@myvos.med.br</a> ou entre em contato conosco
+                    <a href="https://contate.me/myvos" target="_blank">(49) 9 8820-0202</a> <img class="ImgWhats"
+                        src="img/whatsapp.png" alt=""></p>
             </div>
         </section>
 
@@ -333,8 +356,10 @@
                 <p>© 2022 por MyVos. Todos os direitos reservados.</p>
                 <p>Endereço: Rua Antonio Adolpho Maresch, 68 Flor da Serra | Joaçaba - SC</p>
                 <div class="footerSocialMedia">
-                    <a href="https://www.instagram.com/myvos.med/" target="_blank"><img src="img/ant-design_instagram-filled.png" alt=""></a>
-                    <a href="https://www.linkedin.com/company/myvosmed/" target="_blank"><img src="img/akar-icons_linkedin-box-fill.png" alt=""></a>
+                    <a href="https://www.instagram.com/myvos.med/" target="_blank"><img
+                            src="img/ant-design_instagram-filled.png" alt=""></a>
+                    <a href="https://www.linkedin.com/company/myvosmed/" target="_blank"><img
+                            src="img/akar-icons_linkedin-box-fill.png" alt=""></a>
                     <a href="https://contate.me/myvos" target="_blank"><img src="img/dashicons_whatsapp.png" alt=""></a>
                 </div>
             </div>

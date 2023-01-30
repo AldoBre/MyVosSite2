@@ -8,28 +8,31 @@
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: white;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
-  }
+}
 
 .target:target {
     animation: fadeIn 0.5s ease-in-out;
-    scroll-margin-top: 15rem;
-
-  }
-
-.targetTo:target{
-    animation: fadeIn 0.5s ease-in-out;
+    scroll-margin-top: 11rem;
+    
 }
 
-  @keyframes fadeIn {
+.targetTo:target {
+    animation: fadeIn 0.5s ease-in-out;
+    scroll-margin-top: 1rem;
+}
+
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -61,8 +64,8 @@ html, body {
 }
 
 .navImgWrepper img {
-    width: 19.5rem;
-    height: 7.3rem;
+    width: 12.5rem;
+    height: 4.3rem;
 }
 
 .navMenuWrepper ul {
@@ -96,7 +99,7 @@ nav button {
     border: none;
 
     max-width: 21.6rem;
-    
+
 
     padding: .8rem;
 }
@@ -331,8 +334,6 @@ video {
     display: flex;
     position: absolute;
     top: -3rem;
-
-
     justify-content: center;
 }
 
@@ -371,7 +372,7 @@ video {
 
 .plansCard {
     display: flex;
-    margin: 7.7rem 3.9rem 0;
+    margin: 7rem 3.9rem 0;
     gap: 6.4rem;
 }
 
@@ -417,7 +418,7 @@ video {
     display: flex;
     margin-bottom: 1.7rem;
     padding: 1.5rem .7rem;
-    width:90%;
+    width: 90%;
     align-items: center;
     justify-content: center;
 
@@ -516,7 +517,8 @@ video {
     margin-bottom: 1.4rem;
 }
 
-.noticeG1, .noticePolo {
+.noticeG1,
+.noticePolo {
     max-width: 20.6rem;
     padding: 1.3rem;
 }
@@ -555,7 +557,8 @@ video {
 
 /* App */
 
-.sectionAppWrepper, .sectionComents {
+.sectionAppWrepper,
+.sectionComents {
     max-width: 102.4rem;
     width: 90%;
 
@@ -677,12 +680,12 @@ video {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.comentName{
+.comentName {
     display: flex;
     justify-content: center;
 }
 
-.comentText{
+.comentText {
     height: 10rem;
 }
 
@@ -733,7 +736,7 @@ video {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.ImgWhats{
+.ImgWhats {
     width: 2.1rem;
     height: 2.2rem;
 }
@@ -829,15 +832,177 @@ video {
 }
 
 #modal {
+    margin-top: 3rem;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: #434958;
     z-index: 10;
     max-width: 65.9rem;
     width: 90%;
     transition: 0.5s;
+    padding: 3.6rem;
+    border-radius: 1rem;
+}
+
+.modalText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.priceOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pricetwo{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.modalText h1 {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-bottom: 2.5rem;
+}
+
+.modalText ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.modalText ul li {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+.plansName {
+    background: #1E1E1E;
+    padding: 1rem;
+    width: 30%;
+    border-radius: .8rem;
+    display: flex;
+    position: absolute;
+    margin-top: -2rem;
+    justify-content: center;
+}
+
+.plansName p {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+.modalPriceMonth {
+    display: flex;
+    max-width: 45rem;
+    width: 100%;
+    height: 12.1rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: .8rem;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
+
+.modalPriceMonth p{
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    color: #F58D43;
+    margin-top: 1rem;
+}
+
+.close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    padding: .8rem;
+    background-color: #292C33;
+    border-top-left-radius: .8rem;
+    border-bottom-right-radius: 2rem;
+    font-family: 'Encode Sans Expanded';
+    font-weight:bold;
+    color: #f5deb3b8;
+    cursor: pointer;
+}
+
+.prices {
+    display: flex;
+    gap: 1rem;
+}
+
+.btnModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.7rem;
+}
+
+.btnModal button {
+    background: #0C9FDE;
+    max-width: 34.1rem;
+    border: none;
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 600;
+    border-radius: .8rem;
+    line-height: 2rem;
+    color: #FFFCFC;
+    padding: 2.3rem 1.25rem;
+    cursor: pointer;
+}
+
+.prices h1 {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #FFFFFF;
+}
+
+.prices p {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
 }
 
 .hide {
@@ -860,10 +1025,10 @@ video {
         font-size: 45%;
     }
 
-    .card button{
+    .card button {
         font-size: 1.3rem;
     }
-    
+
 
 }
 
@@ -954,20 +1119,20 @@ video {
         justify-content: center;
     }
 
-    .noticeCards{
+    .noticeCards {
         gap: 2rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .noticeCards p{
+    .noticeCards p {
         font-size: 2rem;
     }
 
     .noticeG1,
     .noticeNd,
-    .noticePolo{
+    .noticePolo {
         max-width: none;
         width: 50rem;
     }
@@ -981,117 +1146,146 @@ video {
         font-size: 2rem;
     }
 
-    .coment{
+    .coment {
         width: 80%;
     }
 
-    .comentText{
+    .comentText {
         height: auto;
     }
 
-    .containerComents{
+    .containerComents {
         gap: 1rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .sectionContact{
+    .sectionContact {
         padding: 4rem;
     }
 
-    .containerFooter{
+    .containerFooter {
         gap: 2rem;
         flex-direction: column;
     }
 
-    .containerApp{
+    .containerApp {
         flex-direction: column;
         justify-content: center;
     }
 
-    .imgApp{
+    .imgApp {
         display: flex;
         justify-content: center;
         margin-right: none;
-        
+
     }
 
-    .titlePlans{
+    .titlePlans {
         align-items: center;
     }
 
-    .titlePlans h2{
+    .titlePlans h2 {
         line-height: 3rem;
     }
 
+    .modalText ul li{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
 }
-@media (max-width: 380px){
-    .sectionTitleWrepper p{
+
+@media (max-width: 380px) {
+    .sectionTitleWrepper p {
         font-size: 2.2rem;
         text-align: center;
         justify-content: center;
     }
 
-    .presentationInfoWrepper{
+    .presentationInfoWrepper {
         flex-direction: column;
     }
 
-    .sectionVideoWrepper video{
+    .sectionVideoWrepper video {
         width: 45rem;
     }
-    
-    .imgApp{
+
+    .imgApp {
         margin-right: .01rem;
     }
 
-    .containerApp{
+    .containerApp {
         text-align: center;
     }
-    
-}
 
-    @media (max-width: 321px){
-
-        .presentationWrepper{
-            margin: 11rem auto 3rem;
-        }
-
-        .presentationWrepper p{
-            font-size: 2rem;
-        }
-
-        .presentationTextWrepper h1{
-            line-height: 5rem;
-            font-size: 4rem;
-        }
-
-        .sectionTitleWrepper p {
-            font-size: 1.6rem;
-        }
-    
-        .sectionVideoWrepper video{
-            width: 35rem;
-        }
-        
-        .card button{
-            font-size: 2rem;
-            width: 90%;
-        }
-    
-        .noticeG1,
-        .noticeNd,
-        .noticePolo{
-            width: auto;
-        }
-    
-        .containerContactText p{
-            width: auto;
-        }
-    
-        #titleCardTwo{
-            font-size: 2.5rem;
-        }
+    .modalPrice{
+        flex-direction: column;
+        gap: 5rem;
     }
 
-    
+    .modalPriceMonth, 
+    .priceOne{
+        width: 100%;
+    }
+    .pricetwo{
+        width: 100%;
+    }
+
+    .plansName{
+        width: 75%;
+        font-size: 2rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prices h1{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 321px) {
+
+    .presentationWrepper {
+        margin: 11rem auto 3rem;
+    }
+
+    .presentationWrepper p {
+        font-size: 2rem;
+    }
+
+    .presentationTextWrepper h1 {
+        line-height: 5rem;
+        font-size: 4rem;
+    }
+
+    .sectionTitleWrepper p {
+        font-size: 1.6rem;
+    }
+
+    .sectionVideoWrepper video {
+        width: 35rem;
+    }
+
+    .card button {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .noticeG1,
+    .noticeNd,
+    .noticePolo {
+        width: auto;
+    }
+
+    .containerContactText p {
+        width: auto;
+    }
+
+    #titleCardTwo {
+        font-size: 2.5rem;
+    }
+}
