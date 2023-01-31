@@ -28,6 +28,14 @@ body {
     scroll-margin-top: 1rem;
 }
 
+.efeito{
+    animation: fadeIn 1.5s ease-in-out
+}
+
+
+
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -43,23 +51,16 @@ body {
 .navWrepper {
     background: #F58D43;
     border-radius: 0px 0px 4.65rem 4.65rem;
-
     width: 100%;
-
-
     margin: auto;
     right: 0;
     left: 0;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 1.5rem 4.1rem;
     gap: 5.9rem;
     z-index: 999999;
-
     position: fixed;
 }
 
@@ -132,13 +133,27 @@ nav button a {
 
 .presentationWrepper {
     display: flex;
-    margin: 18.4rem 10rem 3.5rem;
+    margin: 8rem 10rem 3.5rem;
 }
 
 .presentationImgWrepper img {
     width: 34.8rem;
     height: 40.7rem;
 }
+
+/*efeito de imagem da esquerda para direita*/
+
+#ImgHeader{
+    position:relative;
+    right: -200%;
+    transition: all 1s;
+}
+
+#ImgHeader.show {
+    right: 0;
+}
+
+
 
 .presentationTextWrepper {
     display: flex;
@@ -167,6 +182,25 @@ nav button a {
     color: #F58D43;
     font-weight: 600;
     font-size: 2rem;
+    animation: title-animation 3s forwards;
+}
+
+@keyframes title-animation {
+    0%{
+        font-size: 2rem;
+    }
+    50%{
+        font-size: 3rem;
+    }
+}
+
+.blink{
+    animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+    50%{
+        scale: 1.1;
+    }
 }
 
 /*Cards*/
@@ -175,7 +209,12 @@ nav button a {
     display: flex;
     width: 90%;
     gap: 9.2rem;
+}
 
+
+
+.presentationCardWrepper{
+    width: 100%;
 }
 
 .presentationCardWrepper h3 {

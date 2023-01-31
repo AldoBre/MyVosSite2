@@ -21,6 +21,8 @@ const plansPeriod = document.querySelector("#plansPeriod")
 
 const btnModalText= document.querySelector('#btnModalText')
 
+const text = document.querySelector('.text')
+
 btn1.addEventListener('click', ()=>{
     modal.classList.toggle("hide")
     fade.classList.toggle("hide")
@@ -107,4 +109,15 @@ closeModalButton.addEventListener("click", () =>{
     modal.classList.add("hide")
     fade.classList.add("hide")
 })
+
+//carrega imagem assim que abre o site
+
+window.onload = function() {
+    document.querySelector("#ImgHeader").classList.add("show");
+  };
+
+// efeito de text
+
+
+
 
