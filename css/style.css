@@ -133,12 +133,12 @@ nav button a {
 
 .presentationWrepper {
     display: flex;
-    margin: 8rem 10rem 3.5rem;
+    margin: 8rem 4rem 3.5rem;
 }
 
 .presentationImgWrepper img {
     margin-top: 5rem;
-    width: 45.8rem;
+    width: 50rem;
     height: 33.7rem;
     border-radius: .8rem;
 }
@@ -155,8 +155,6 @@ nav button a {
     right: 0;
 }
 
-
-
 .presentationTextWrepper {
     display: flex;
     flex-direction: column;
@@ -166,7 +164,7 @@ nav button a {
 .presentationTextWrepper h1 {
     font-family: 'Encode Sans Expanded';
     font-weight: 500;
-    font-size: 4.0rem;
+    font-size: 4rem;
     line-height: 7rem;
     margin-top: 3rem;
 }

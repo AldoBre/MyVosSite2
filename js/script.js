@@ -116,8 +116,6 @@ window.onload = function() {
     document.querySelector("#ImgHeader").classList.add("show");
   };
 
-// efeito de text
-
 
 
 
