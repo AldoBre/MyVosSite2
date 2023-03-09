@@ -137,8 +137,10 @@ nav button a {
 }
 
 .presentationImgWrepper img {
-    width: 34.8rem;
-    height: 40.7rem;
+    margin-top: 5rem;
+    width: 45.8rem;
+    height: 33.7rem;
+    border-radius: .8rem;
 }
 
 /*efeito de imagem da esquerda para direita*/
@@ -402,8 +404,8 @@ video {
 
 .plansContainer {
     display: flex;
-    max-width: 92.1rem;
-    width: 10-0%;
+    align-items: center;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     flex-direction: column;
@@ -411,46 +413,56 @@ video {
 
 .plansCard {
     display: flex;
-    margin: 7rem 3.9rem 0;
-    gap: 6.4rem;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 3rem;
+    width: 95%;
 }
 
 .card {
     background: #434958;
-    border-radius: 2rem 7.7rem 2rem 2rem;
-    max-width: 23.8rem;
+    border-radius: 2rem;
+    max-width: 30rem;
+    height: 100rem;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card h1 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: 'Encode Sans Expanded';
     font-style: normal;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     line-height: 2rem;
 }
 
 .card ul {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 2rem;
-    margin: 0 1.8rem 0;
-    max-width: 20rem;
-    padding: 2rem;
+    margin: 2rem 3rem 1rem;
+    padding: .3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+hr{
+    width: 100%;
+    margin-top: 1rem;
+    opacity: .3;
 }
 
 .card ul li {
     font-style: normal;
-    font-weight: 100;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.6rem;
     line-height: 2rem;
     margin-bottom: .5rem;
     font-family: 'Encode Sans Expanded';
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .card button {
@@ -465,6 +477,7 @@ video {
     font-style: normal;
     font-weight: 600;
     line-height: 1.5rem;
+    font-size: 1.8;
     color: #FFFCFC;
 
     background: #08297E;
@@ -1058,7 +1071,7 @@ width: 100%;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
 
     :root {
         font-size: 45%;
@@ -1069,12 +1082,32 @@ width: 100%;
     }
 
 
+    .noticeCards{
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .noticeCards p{
+        font-size: 2rem;
+    }
+
+    .noticeG1,
+    .noticeNd,
+    .noticePolo {
+        max-width: none;
+        width: 80%;
+
+    }
+
 }
 
 @media (max-width: 430px) {
 
     :root {
-        font-size: 35%;
+        font-size: 36%;
     }
 
     .navMenuWrepper ul {
@@ -1092,6 +1125,8 @@ width: 100%;
 
     .presentationTextWrepper p {
         margin-right: 0;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
     .sectionVideoWrepper video {
@@ -1112,7 +1147,20 @@ width: 100%;
 
     .presentationInfoWrepper {
         gap: 1.5rem;
+        flex-direction: column;
     }
+
+    .presentationCardWrepper p{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .presentationCardWrepper h3{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+
 
     .presentationCardWrepper:nth-child(1) img {
         margin-bottom: .34rem;
@@ -1125,20 +1173,20 @@ width: 100%;
     }
 
     .card {
-        max-width: 150rem;
+        max-width: 50rem;
     }
 
     .card h1 {
         font-size: 3rem;
+        margin:1rem;
     }
 
     .card ul {
-        max-width: 150rem;
-        margin: 0 3rem 0;
+        margin: 5rem;
     }
 
     .card ul li {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 3rem;
 
     }
@@ -1156,6 +1204,7 @@ width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 3rem;
     }
 
     .noticeCards {
@@ -1166,6 +1215,11 @@ width: 100%;
     }
 
     .noticeCards p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .noticeCards a {
         font-size: 2rem;
     }
 
@@ -1173,7 +1227,6 @@ width: 100%;
     .noticeNd,
     .noticePolo {
         max-width: none;
-        width: 50rem;
     }
 
     .plansLgpd {
@@ -1227,6 +1280,9 @@ width: 100%;
 
     .titlePlans h2 {
         line-height: 3rem;
+        max-width: 60rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .modalText ul li{

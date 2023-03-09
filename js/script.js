@@ -36,7 +36,7 @@ btn1.addEventListener('click', ()=>{
     planTitle.innerHTML = 'Plano Mensal'
     plansPrice.innerHTML = 'R$ 7,90'
     plansPeriod.innerHTML = '/Mês'
-    btnModalText.innerHTML ='Cadastre-se Gratuitamente'
+    btnModalText.innerHTML ='CADASTRE-SE GRATUITAMENTE'
     
     btnModalText.onclick = function(){
         window.open('https://myvos.med.br/register','_blank')
@@ -61,7 +61,7 @@ btn2.addEventListener('click', ()=>{
     planTitle.innerHTML = 'Planos a partir de'
     plansPrice.innerHTML = 'R$ 3,90'
     plansPeriod.innerHTML = '/colaborador'
-    btnModalText.innerHTML= 'Converse com nosso atendimento'
+    btnModalText.innerHTML= 'CONVERSE COM NOSSO ATENDIMENTO'
     liItem4.style.display ="none"
     liItem5.style.display ="none"
     priceModalPlansTwo.style.display ='none'
@@ -86,7 +86,7 @@ btn3.addEventListener('click', ()=>{
 
     planTitle.innerHTML = 'Cadastre-se Agora'
     plansPrice.innerHTML = 'GRATUITAMENTE'
-    btnModalText.innerHTML= 'Converse com nosso atendimento'
+    btnModalText.innerHTML= 'CONVERSE COM NOSSO ATENDIMENTO'
     btnModalText.onclick = function(){
         window.open('https://contate.me/myvos','_blank')
     }
